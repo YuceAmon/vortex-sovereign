@@ -2,7 +2,7 @@
 import MoneyHeatmap from '../components/Heatmap';
 import VezirSignal from '../components/VezirSignal';
 import AlphaFeed from '../components/AlphaFeed';
-import WhaleRadar from '../components/WhaleRadar';
+import WealthMap from '../components/WealthMap';
 import SentimentGauge from '../components/Sentiment';
 
 export default function SovereignDashboard() {
