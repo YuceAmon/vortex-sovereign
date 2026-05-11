@@ -4,14 +4,14 @@ import VezirSignal from '../components/VezirSignal';
 import AlphaFeed from '../components/AlphaFeed';
 import WealthMap from '../components/WealthMap';
 import SentimentGauge from '../components/Sentiment';
-
+import Sidebar from '../../components/Sidebar';
 export default function SovereignDashboard() {
   return (
-    <main style={masterStyles.container}>
-      {/* Üst Sıra: Nihai Karar ve Duygu Analizi */}
-      <div style={masterStyles.topRow}>
-        <div style={{ flex: 2 }}><VezirSignal /></div>
-        <div style={{ flex: 1 }}><SentimentGauge value={72} /></div>
+  <div className="flex"> {/* Bu yeni eklediğimiz dış çerçeve */}
+    <Sidebar /> {/* Az önce oluşturduğun menü burada görünecek */}
+
+    <main style={masterStyles.container} className="flex-1">
+      {/* Dashboard içeriğin burada kalmaya devam edecek */}
       </div>
 
       {/* Orta Sıra: Piyasa Isı Haritası ve Balina Takibi */}
