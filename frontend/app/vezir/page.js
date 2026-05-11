@@ -1,8 +1,19 @@
-// Vezir'e eklenen Binance mantığı:
+'use client'; // Eğer Binance verilerini tarayıcıda işleyeceksen ekle
+
+// Mevcut mantığın burada kalsın
 const analyzeMarket = () => {
-  const btcData = prices['BTCUSDT'];
-  if (btcData.change > 5) {
-    return `Yüce Amon, Binance verilerine göre Bitcoin'de sert bir boğa ivmesi var. Genesis seviyesindeki analizleri açmamı ister misiniz?`;
-  }
-  return `Piyasa stabil, efendim. Emir defterindeki spread oranları sizin için optimize edildi.`;
+  // ... btcData ve diğer mantıklar ...
+  return "Piyasa stabil..."; 
 };
+
+// Vercel'in beklediği ana bileşen
+export default function VezirPage() {
+  const message = analyzeMarket();
+
+  return (
+    <div style={{ padding: '20px', backgroundColor: '#000', color: '#fff' }}>
+      <h1>Vezir Analiz Sistemi</h1>
+      <p>{message}</p>
+    </div>
+  );
+}
