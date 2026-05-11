@@ -1,0 +1,31 @@
+/* app/globals.css */
+
+/* GPU Hızlandırma ve Donma Engelleme */
+.sovereign-card, .vortex-btn, .price-animate {
+  will-change: transform, opacity;
+  transform: translateZ(0); 
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Küresel Stil Temeli */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #020617; /* Siyahın en asil tonu */
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Kaydırma Çubuğu Özelleştirme (Monarch Gold) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0e11;
+}
+::-webkit-scrollbar-thumb {
+  background: #fbbf24;
+  border-radius: 10px;
+}
