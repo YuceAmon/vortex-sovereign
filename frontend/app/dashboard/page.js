@@ -17,7 +17,7 @@ export default function SovereignDashboard() {
       {/* Orta Sıra: Piyasa Isı Haritası ve Balina Takibi */}
       <div style={masterStyles.midRow}>
         <div style={{ flex: 1 }}><MoneyHeatmap /></div>
-        <div style={{ flex: 1 }}><WhaleRadar /></div>
+        <div style={{ flex: 1 }}><WealthMap /></div>
       </div>
 
       {/* Alt Sıra: Elit Sosyal Akış */}
